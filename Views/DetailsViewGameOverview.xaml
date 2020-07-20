@@ -42,7 +42,7 @@
                                             DockPanel.Dock="Left" Height="300" Margin="40,30,10,0"
                                             StretchDirection="Both" Stretch="Uniform"
                                             RenderOptions.BitmapScalingMode="Fant"  HorizontalAlignment="Left" Grid.Row="0"/>
-                                <StackPanel VerticalAlignment="Bottom" DockPanel.Dock="Left" Margin="40,0,0,0" Grid.Row="1">
+                                <StackPanel VerticalAlignment="Bottom" DockPanel.Dock="Left" Margin="20,0,0,0" Grid.Row="1">
                                     <DockPanel>
                                         <Image x:Name="PART_ImageIcon" MaxHeight="48" MaxWidth="48"
                                                     DockPanel.Dock="Left" Margin="0,0,10,0"
@@ -70,7 +70,7 @@
                                     </StackPanel>
                                 </StackPanel>
                                 <StackPanel x:Name="PART_ElemDescription" Grid.Row="2"
-                                                DockPanel.Dock="Bottom" Margin="30,20,5,0" RenderTransformOrigin="0.499,0.568" VerticalAlignment="Top">
+                                                DockPanel.Dock="Bottom" Margin="20,20,5,0" RenderTransformOrigin="0.499,0.568" VerticalAlignment="Top">
                                     <TextBlock Text="{DynamicResource LOCGameDescriptionTitle}" Margin="0,15,0,10"
                                                     Style="{DynamicResource BaseTextBlockStyle}" />
                                     <Separator Background="{DynamicResource PanelSeparatorBrush}" />
@@ -102,12 +102,12 @@
                                     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource PropertyItemButton}" />
                                 </StackPanel.Resources>
 
-                                <TextBlock Text="{DynamicResource LOCGameDetails}" Margin="40,35,20,10"
+                                <TextBlock Text="{DynamicResource LOCGameDetails}" Margin="40,25,20,10"
                                                     Style="{DynamicResource BaseTextBlockStyle}" />
 
                                 <Separator Background="{DynamicResource PanelSeparatorBrush}" />
 
-                                <GridEx Margin="40,5,20,10"
+                                <GridEx Margin="25,5,20,10"
                                                 GridEx.ColumnCount="2" GridEx.StarColumns="1"
                                                 GridEx.RowCount="21" GridEx.AutoLayoutColumns="2">
                                     <GridEx.Resources>
