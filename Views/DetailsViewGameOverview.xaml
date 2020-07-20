@@ -12,7 +12,7 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="980*"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition MinWidth="300" Width="300"/>
+                            <ColumnDefinition MinWidth="250" Width="250"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <FadeImage x:Name="PART_ImageBackground" Stretch="Uniform"
@@ -38,12 +38,10 @@
                                     <RowDefinition Height="*"/>
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
-                                <Image Name="PART_ImageCover" VerticalAlignment="Top"
-                                            DockPanel.Dock="Left" Height="400
-                                           " Margin="100,30,10,0"
+                                <Image Name="PART_ImageCover" VerticalAlignment="Bottom"
+                                            DockPanel.Dock="Left" Height="300" Margin="40,30,10,0"
                                             StretchDirection="Both" Stretch="Uniform"
-                                            RenderOptions.BitmapScalingMode="Fant" Width="300
-                                           " HorizontalAlignment="Left" Grid.Row="0"/>
+                                            RenderOptions.BitmapScalingMode="Fant"  HorizontalAlignment="Left" Grid.Row="0"/>
                                 <StackPanel VerticalAlignment="Bottom" DockPanel.Dock="Left" Margin="40,0,0,0" Grid.Row="1">
                                     <DockPanel>
                                         <Image x:Name="PART_ImageIcon" MaxHeight="48" MaxWidth="48"
@@ -72,7 +70,7 @@
                                     </StackPanel>
                                 </StackPanel>
                                 <StackPanel x:Name="PART_ElemDescription" Grid.Row="2"
-                                                DockPanel.Dock="Bottom" Margin="40,20,5,0" RenderTransformOrigin="0.499,0.568" VerticalAlignment="Top">
+                                                DockPanel.Dock="Bottom" Margin="30,20,5,0" RenderTransformOrigin="0.499,0.568" VerticalAlignment="Top">
                                     <TextBlock Text="{DynamicResource LOCGameDescriptionTitle}" Margin="0,15,0,10"
                                                     Style="{DynamicResource BaseTextBlockStyle}" />
                                     <Separator Background="{DynamicResource PanelSeparatorBrush}" />
@@ -90,7 +88,7 @@
                                   VerticalScrollBarVisibility="Visible"
                                   Style="{DynamicResource DetailsScrollViewer}"
                                   d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameDetailsIntance}" Grid.Column="2" Background="#7F000000">
-                            <StackPanel Margin="0,0,0,0" Width="300"  HorizontalAlignment="Center"  Background="#7F000000"
+                            <StackPanel Margin="0,0,0,0" Width="250"  HorizontalAlignment="Center"  Background="#7F000000"
                                     >
                                 <StackPanel.Resources>
                                     <Style TargetType="{x:Type ItemsControl}">
